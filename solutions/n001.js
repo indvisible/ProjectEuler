@@ -5,7 +5,7 @@ The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.
 */
 define('n001', function () {
-	function n1_v1(number){
+	function n001_v1(number){
 		var sum, index;
 		sum = 0;
 		for(index = 3; index < number; index++){
@@ -16,5 +16,5 @@ define('n001', function () {
 		return sum;
 	}
 
-	return n1_v1;
+	return n001_v1;
 });

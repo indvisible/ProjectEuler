@@ -4,7 +4,7 @@ four million, find the sum of the even-valued terms.
 */
 
 define('n002', function() {
-	function n2_v1 (numberToCalculate) {
+	function n002_v1 (numberToCalculate) {
 		var first, second, current, sum;
 		first = 1;
 		second = 2;
@@ -28,7 +28,7 @@ define('n002', function() {
 		return sum;
 	}
 
-	function n2_v2 (numberToCalculate) {
+	function n002_v2 (numberToCalculate) {
 		var first = 1,
 			second = 2,
 			sum = 2,
@@ -46,5 +46,5 @@ define('n002', function() {
 		return sum;
 	}
 
-	return n2_v2;
+	return n002_v2;
 });
