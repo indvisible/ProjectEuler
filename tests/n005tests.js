@@ -5,7 +5,7 @@ define(['n005'], function(test) {
 				expect(test(10)).toEqual(2520);
 			});
 
-			xit('# 232792560 when \'20\'', function() {
+			it('# 232792560 when \'20\'', function() {
 				expect(test(20)).toEqual(232792560);
 			});
 		})
