@@ -22,19 +22,19 @@ define('n005', function() {
 
     function n005_v2(numberToCalculate) {
         var isDivide,
-            smallest,
+            startNumber,
             divider;
-        for (smallest = numberToCalculate * 2;; smallest++) {
+        for (startNumber = numberToCalculate * 2;; startNumber++) {
             isDivide = true;
             for (divider = 2; divider < numberToCalculate; divider++) {
-                if (smallest % divider !== 0) {
+                if (startNumber % divider !== 0) {
                     isDivide = false;
                     break;
                 }
             }
 
             if (isDivide) {
-                return smallest;
+                return startNumber;
             }
         }
     }
