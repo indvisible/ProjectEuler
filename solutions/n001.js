@@ -16,5 +16,12 @@ define('n001', function () {
 		return sum;
 	}
 
-	return n001_v1;
+	function n001_v2_chain(number){
+		return new Array(number)
+			.join().split(',')
+			.map(function(item, index){ return index;})
+			.reduce(function(a, b){ return (b% 3 === 0 || b % 5 === 0) ? a + b: a; });
+	}
+
+	return n001_v2_chain;
 });
