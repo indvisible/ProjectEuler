@@ -1,7 +1,7 @@
 // Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
 // How many such routes are there through a 20×20 grid?
 
-define('n015', function () {
+define('n015', function() {
 	function n015_v1 (number) {
 		        
         // Explanation from http://stackoverflow.com/a/17800645/1563880
@@ -166,5 +166,23 @@ define('n015', function () {
         return doubleFactoral / (factorial * factorial);
 	}
 
-	return n015_v1;
+    function n015_v2 (number) {
+        var matrix, line, column;
+        
+        number += 1;
+        matrix = new Array(number);
+        matrix[0] = new Array(number).join().split(',').map(function(){return 1;});
+
+        for (line = 1; line < number; line++) {
+            matrix[line] = new Array(number);
+            matrix[line][0] = 1;
+            for (column = 1; column < number; column++) {
+                matrix[line][column] = matrix[line - 1][column] + matrix[line][column - 1];
+            }
+        }
+
+        return matrix[number - 1][number - 1];
+    }
+
+	return n015_v2;
 });
