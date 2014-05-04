@@ -1,7 +1,6 @@
-/*
-The prime factors of 13195 are 5, 7, 13 and 29.
-What is the largest prime factor of the number 600851475143 ?
-*/
+// The prime factors of 13195 are 5, 7, 13 and 29.
+// What is the largest prime factor of the number 600851475143 ?
+
 define('n003', function() {
     function n003_v1(inputNumber) {
         function isPrime(x) {
@@ -44,6 +43,8 @@ define('n003', function() {
     }
 
     function n003_v2(inputNumber) {
+
+        // TODO: alter to separate file
         function isPrime(maybePrime) {
             if (maybePrime === 1 || maybePrime === 2 || maybePrime === 3) {
                 return true;

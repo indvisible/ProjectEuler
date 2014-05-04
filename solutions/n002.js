@@ -1,7 +1,5 @@
-/*
-By considering the terms in the Fibonacci sequence whose values do not exceed 
-four million, find the sum of the even-valued terms.
-*/
+// By considering the terms in the Fibonacci sequence whose values do not exceed 
+// four million, find the sum of the even-valued terms.
 
 define('n002', function() {
 	function n002_v1 (numberToCalculate) {

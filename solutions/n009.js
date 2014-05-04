@@ -1,8 +1,7 @@
-/*
-A Pythagorean triplet is a set of three natural numbers, a < b < c, for which, a*a + b*b = c*c
-There exists exactly one Pythagorean triplet for which a + b + c = 1000.
-Find the product abc.
-*/
+// A Pythagorean triplet is a set of three natural numbers, a < b < c, for which, a*a + b*b = c*c
+// There exists exactly one Pythagorean triplet for which a + b + c = 1000.
+// Find the product abc.
+
 define('n009', function() {
     function n009_v1(numberToCalculate) {
         function isSumEqualNumber(a, b, c, number) {
@@ -28,6 +27,7 @@ define('n009', function() {
     return n009_v1;
 });
 
+// TODO: proove
 // a 200 
 // b 375 
 // c 425
