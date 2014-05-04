@@ -70,4 +70,6 @@ define('n028', function() {
 
         return sum;
     }
+
+    return n028_v2;
 });
