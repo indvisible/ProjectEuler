@@ -1,7 +1,7 @@
 // What is the greatest product of four adjacent numbers 
 // in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
-define('n007', function() {
+define('n011', function() {
     function n011_v1(sourceArray, digitsCount){
         if (!sourceArray) {
             return "pass the matrix";

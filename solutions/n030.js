@@ -9,7 +9,7 @@
 // Find the sum of all the numbers that can be written as the sum of fifth powers of their
 // digits.
 
-define('n001', function () {
+define('n030', function () {
     function n030_v1 (powerIndex) {
         var array = [];
         var str, sum, parsed, number, i, end;
